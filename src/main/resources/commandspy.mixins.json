@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "top.vrilhyc.mods.commandspy.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinServerPlayNetworkHandler"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

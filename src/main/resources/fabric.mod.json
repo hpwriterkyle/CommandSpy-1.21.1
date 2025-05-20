@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "commandspy",
+  "version": "${version}",
+  "name": "CommandSpy",
+  "description": "just the command spy",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/commandspy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "top.vrilhyc.mods.commandspy.client.CommandspyDataGenerator"
+    ],
+    "client": [
+      "top.vrilhyc.mods.commandspy.client.CommandspyClient"
+    ],
+    "main": [
+      "top.vrilhyc.mods.commandspy.Commandspy"
+    ]
+  },
+  "mixins": [
+    "commandspy.mixins.json",
+    {
+      "config": "commandspy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
